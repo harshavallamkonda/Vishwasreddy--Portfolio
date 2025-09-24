@@ -40,6 +40,9 @@
   position: relative;
   padding: 120px min(6vw, 90px) 140px;
   background: #060606;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .recs-hero {
@@ -90,6 +93,8 @@
   gap: 60px;
   max-width: 1250px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .rec-card {
@@ -107,6 +112,9 @@
   animation: recFadeIn .9s cubic-bezier(.23, .88, .35, 1.12) forwards;
   opacity: 0;
   transform: translateY(40px) scale(.97);
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .rec-card:before {
@@ -321,32 +329,156 @@
 }
 
 @media (max-width: 900px) {
+  .recs-section {
+    padding: 80px min(4vw, 30px) 100px;
+  }
+  
+  .recs-hero {
+    margin-bottom: 50px;
+  }
+  
+  .recs-title {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+  
+  .recs-list {
+    gap: 40px;
+  }
+  
   .rec-card {
     flex-direction: column;
     text-align: center;
-    padding: 44px 40px 50px;
+    padding: 35px 25px 40px;
+    gap: 30px;
+    margin: 0 10px;
   }
+  
+  .rec-card:nth-child(even) {
+    flex-direction: column;
+  }
+  
   .rec-avatar-wrapper {
     order: 0 !important;
-    width: 100%;
+    width: 120px;
+    margin: 0 auto;
   }
+  
+  .rec-avatar,
+  .rec-avatar-img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .rec-avatar-ring {
+    width: 118px;
+    height: 118px;
+  }
+  
   .rec-content {
     max-width: 100%;
   }
+  
+  .rec-name {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    margin-bottom: 8px;
+  }
+  
+  .rec-role {
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  
+  .rec-contact {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+  
   .rec-text {
     text-align: left;
+    font-size: 1rem;
+    line-height: 1.65;
+    letter-spacing: 0.2px;
+    max-width: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 }
 
 @media (max-width: 600px) {
-  .rec-card {
-    padding: 38px 30px 46px;
-    border-radius: 34px;
+  .recs-section {
+    padding: 60px 15px 80px;
   }
-  .rec-name {
-    font-size: 1.8rem;
-  }
+  
   .recs-title {
-    letter-spacing: 3px;
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
+    letter-spacing: 1px;
+    word-spacing: 0.1em;
+  }
+  
+  .rec-card {
+    padding: 30px 20px 35px;
+    border-radius: 25px;
+    margin: 0 5px;
+  }
+  
+  .rec-avatar-wrapper {
+    width: 100px;
+  }
+  
+  .rec-avatar,
+  .rec-avatar-img {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .rec-avatar-ring {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .rec-name {
+    font-size: clamp(1.3rem, 5vw, 1.6rem);
+  }
+  
+  .rec-role {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .rec-contact {
+    font-size: 0.75rem;
+  }
+  
+  .rec-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+  .recs-section {
+    padding: 50px 12px 70px;
+  }
+  
+  .recs-title {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+  }
+  
+  .rec-card {
+    padding: 25px 15px 30px;
+    border-radius: 20px;
+    margin: 0;
+  }
+  
+  .rec-text {
+    font-size: 0.9rem;
+    line-height: 1.55;
   }
 }
