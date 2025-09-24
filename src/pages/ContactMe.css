@@ -1,0 +1,322 @@
+.contact-container {
+  min-height: 100vh;
+  padding: 80px 20px 120px;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: #e6e6e6;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.linkedin-badge-custom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-shadow: 
+    0 15px 35px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  color: #e6e6e6;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  transition: all 0.4s ease;
+}
+
+.linkedin-badge-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 25px 50px rgba(229, 9, 20, 0.2),
+    0 0 0 1px rgba(229, 9, 20, 0.2);
+}
+
+.badge-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 25px;
+  box-shadow: 
+    0 8px 20px rgba(0, 0, 0, 0.4),
+    0 0 0 3px rgba(229, 9, 20, 0.3);
+  transition: all 0.3s ease;
+}
+
+.badge-avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 10px 25px rgba(0, 0, 0, 0.6),
+    0 0 0 3px rgba(229, 9, 20, 0.5);
+}
+
+.badge-content {
+  text-align: left;
+  flex: 1;
+}
+
+.badge-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.badge-title {
+  font-size: 1.1rem;
+  margin: 0 0 15px 0;
+  color: #e50914;
+  font-weight: 600;
+}
+
+.badge-description {
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+  color: #d1d1d1;
+  line-height: 1.6;
+}
+
+.badge-company {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.badge-link {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0077b5, #005983);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+}
+
+.badge-link:hover {
+  background: linear-gradient(135deg, #005983, #004366);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 119, 181, 0.4);
+}
+
+.linkedin-icon {
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+.contact-header p {
+  font-size: 1.4rem;
+  color: #d1d1d1;
+  margin: 0 0 50px 0;
+  font-weight: 400;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+  padding: 20px 30px;
+  border-radius: 50px;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 
+    0 20px 40px rgba(229, 9, 20, 0.3),
+    0 0 0 1px rgba(229, 9, 20, 0.4);
+}
+
+.contact-icon {
+  font-size: 1.8rem;
+  color: #e50914;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.2);
+  color: #ff1f2e;
+}
+
+.contact-link {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #e50914;
+}
+
+.contact-fun {
+  margin-top: 40px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #d1d1d1;
+  font-weight: 500;
+}
+
+.coffee-icon {
+  font-size: 2.5rem;
+  color: #ff9900;
+  animation: swing 2s infinite ease-in-out;
+  filter: drop-shadow(0 4px 15px rgba(255, 153, 0, 0.3));
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px);
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0);
+  }
+}
+
+@keyframes swing {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 60px 15px 80px;
+  }
+  
+  .linkedin-badge-custom {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+    max-width: 90%;
+  }
+  
+  .badge-avatar {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .badge-content {
+    text-align: center;
+  }
+  
+  .badge-name {
+    font-size: 1.4rem;
+  }
+  
+  .badge-title {
+    font-size: 1rem;
+  }
+  
+  .badge-description {
+    font-size: 0.95rem;
+  }
+  
+  .contact-header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact-item {
+    padding: 18px 25px;
+    max-width: 350px;
+  }
+  
+  .contact-icon {
+    font-size: 1.6rem;
+  }
+  
+  .contact-link {
+    font-size: 1.1rem;
+  }
+  
+  .contact-fun {
+    margin-top: 35px;
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .coffee-icon {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 40px 10px 60px;
+  }
+  
+  .linkedin-badge-custom {
+    padding: 20px 15px;
+  }
+  
+  .badge-name {
+    font-size: 1.2rem;
+  }
+  
+  .badge-title {
+    font-size: 0.95rem;
+  }
+  
+  .badge-description {
+    font-size: 0.9rem;
+  }
+  
+  .contact-header p {
+    font-size: 1.1rem;
+  }
+  
+  .contact-item {
+    padding: 15px 20px;
+    gap: 12px;
+  }
+  
+  .contact-link {
+    font-size: 1rem;
+  }
+  
+  .contact-fun {
+    font-size: 1.1rem;
+  }
+  
+  .coffee-icon {
+    font-size: 2rem;
+  }
+}
