@@ -6,7 +6,7 @@ import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
 // Static contact data
 const contactData = {
   name: "Sai Vishwas Reddy Badinehal",
-  title: "Project Manager – Residential & Infrastructure", 
+  title: "Operations & Project Manager – Residential & Infrastructure", 
   summary: "With extensive experience in real estate development, project management, and infrastructure planning across residential communities.",
   companyUniversity: "Sitrus Projects",
   linkedinLink: "https://www.linkedin.com/in/sai-vishwas-reddy-badinehal-375611376?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BU1gQ8WlgSM2il3Z53GSkcA%3D%3D",

@@ -56,6 +56,13 @@ export async function getCertifications(): Promise<Certification[]> {
         issuedDate: '',
         link: 'https://cursa.app/en/my-certificate/cert755bf99325d016d27b3a1f1eb749aa1f',
         iconName: 'estimating'
+      },
+      {
+        title: 'Six Sigma Green Belt: Digital, AI & Smart Manufacturing 2025',
+        issuer: 'Udemy',
+        issuedDate: '',
+        link: 'https://www.udemy.com/certificate/UC-4dd35b5c-ebc9-46dd-b8e6-97e98b97dcfe/',
+        iconName: 'six-sigma'
       }
     ];
   }
