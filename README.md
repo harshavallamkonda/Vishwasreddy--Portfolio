@@ -274,6 +274,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 [![GitHub stars](https://img.shields.io/github/stars/harshavallamkonda/Vishwasreddy--Portfolio?style=social)](https://github.com/harshavallamkonda/Vishwasreddy--Portfolio/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/harshavallamkonda/Vishwasreddy--Portfolio?style=social)](https://github.com/harshavallamkonda/Vishwasreddy--Portfolio/network)
 
-**Made with ❤️ by [Sai Vishwas Reddy Badinehal](https://github.com/harshavallamkonda)**
+**Made with ❤️ by Harsha Vallamkonda(https://github.com/harshavallamkonda)**
 
 </div>
