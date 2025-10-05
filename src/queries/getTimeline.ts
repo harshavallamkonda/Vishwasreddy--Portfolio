@@ -27,12 +27,14 @@ export async function getTimeline(): Promise<TimelineItem[]> {
       {
         timelineType: 'work',
         name: 'SDMJ Construction LLC, South Plainfield, NJ',
-        title: 'Assistant Project Manager',
+        title: 'Operations Analyst',
         techStack: 'Commercial & Residential Construction, Scheduling, Cost Control',
         summaryPoints: [
-          'Coordinating site activities, subcontractors, and material procurement to meet project milestones.',
-          'Assisting with schedules, RFIs, submittals, and change orders to ensure documentation accuracy.',
-          'Tracking budgets and quantities; supporting monthly reporting and stakeholder updates.'
+          'Orchestrated KPI dashboards in Excel/Power BI, improving reporting accuracy by 20% and enabling Lean Six Sigma–driven decision-making.',
+          'Applied Lean Six Sigma to procurement and logistics data, reducing cycle delays by 15% and cutting excess carrying costs',
+          'Coordinated municipal inspections and permitting schedules, expediting approvals and minimizing downtime.',
+          'Achieved cost-control measures and streamlined invoice reconciliation for $150K+ projects, reducing budget variances by 12%',
+          'Optimized compliance workflows with cross-functional teams, achieving 100% OSHA adherence and a 15% reduction in rework.'
         ],
         dateRange: 'Jan 2025 – Present'
       },
@@ -41,12 +43,13 @@ export async function getTimeline(): Promise<TimelineItem[]> {
       {
         timelineType: 'work',
         name: 'Sitrus Projects India Pvt. Ltd., Hyderabad, India',
-        title: 'Project Manager',
+        title: 'Operations Manager',
         techStack: 'Residential Construction, Vendor Management, Quality & Safety',
         summaryPoints: [
-          'Led planning and execution for residential sites; ensured adherence to schedule and budget.',
-          'Managed vendor contracts, BOQs, and billing; verified contractor invoices and work progress.',
-          'Maintained QA/QC and safety compliance; coordinated inspections and handovers.'
+          'Spearheaded end-to-end execution of residential developments, achieving 95% milestone adherence while ensuring compliance with zoning,permitting, and safety standards',
+          'Implemented vendor scorecards and procurement strategies, cutting costs by 12% and reducing rework by 15%.',
+          'Standardized workflows and SOPs across multiple sites, boosting efficiency and ensuring consistent quality.',
+          'Delivered weekly KPI dashboards and financial reports in Excel/Power BI, enhancing leadership visibility.'
         ],
         dateRange: 'Jun 2021 – Jul 2023'
       },
@@ -55,12 +58,14 @@ export async function getTimeline(): Promise<TimelineItem[]> {
       {
         timelineType: 'work',
         name: 'Sitrus Projects India Pvt. Ltd., Hyderabad, India',
-        title: 'Project Manager Intern',
+        title: 'Operations Analyst Intern',
         techStack: 'Site Supervision, Quantity Takeoff, Documentation',
         summaryPoints: [
-          'Supported site engineers with supervision, QTOs, and daily progress reporting.',
-          'Assisted in vendor coordination, material tracking, and permit documentation.',
-          'Observed safety briefings and quality checks across units.'
+          'Developed cost-tracking and vendor analysis reports in Excel, improving budget forecasting accuracy by 10%.',
+          'Built operational dashboards to monitor site progress, resources, and KPIs, enabling faster data-driven reviews.',
+          'Applied Lean Six Sigma to streamline approval workflows, reducing municipal clearance delays by 20%',
+          'Performed quantity take-offs, cost variance checks, and ROI analysis on multi-acre projects.',
+          'Standardized reporting templates, improving communication and ensuring 95%+ milestone tracking accuracy'
         ],
         dateRange: 'Jan 2021 – Jun 2021'
       },

@@ -63,6 +63,27 @@ export async function getCertifications(): Promise<Certification[]> {
         issuedDate: '',
         link: 'https://www.udemy.com/certificate/UC-4dd35b5c-ebc9-46dd-b8e6-97e98b97dcfe/',
         iconName: 'six-sigma'
+      },
+      {
+        title: 'Real Estate Finance',
+        issuer: 'CSU',
+        issuedDate: '',
+        link: 'https://drive.google.com/file/d/1Xi2IRVqIA7QYjwosyL-yZTdR40DE1H_B/view?usp=drive_link',
+        iconName: 'finance'
+      },
+      {
+        title: 'Real Estate Practices',
+        issuer: 'CSU',
+        issuedDate: '',
+        link: 'https://drive.google.com/file/d/1bHhgTg6pjA-Z-6VcWLpcWBbOh7LCEsMQ/view?usp=drive_link',
+        iconName: 'Real Estate'
+      },
+      {
+        title: 'Real Estate Principles',
+        issuer: 'CSU',
+        issuedDate: '',
+        link: 'https://drive.google.com/file/d/18cUhJ7wveq53v6R0AAIWX6b7D01CtmnP/view?usp=drive_link',
+        iconName: 'Real Estate'
       }
     ];
   }
