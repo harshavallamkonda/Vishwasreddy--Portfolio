@@ -27,7 +27,7 @@ export async function getTimeline(): Promise<TimelineItem[]> {
       {
         timelineType: 'work',
         name: 'SDMJ Construction LLC, South Plainfield, NJ',
-        title: 'Operations Analyst',
+        title: 'Business Operations Analyst',
         techStack: 'Commercial & Residential Construction, Scheduling, Cost Control',
         summaryPoints: [
           'Orchestrated KPI dashboards in Excel/Power BI, improving reporting accuracy by 20% and enabling Lean Six Sigma–driven decision-making.',
@@ -43,7 +43,7 @@ export async function getTimeline(): Promise<TimelineItem[]> {
       {
         timelineType: 'work',
         name: 'Sitrus Projects India Pvt. Ltd., Hyderabad, India',
-        title: 'Operations Manager',
+        title: 'Project Operations Manager',
         techStack: 'Residential Construction, Vendor Management, Quality & Safety',
         summaryPoints: [
           'Spearheaded end-to-end execution of residential developments, achieving 95% milestone adherence while ensuring compliance with zoning,permitting, and safety standards',
@@ -58,7 +58,7 @@ export async function getTimeline(): Promise<TimelineItem[]> {
       {
         timelineType: 'work',
         name: 'Sitrus Projects India Pvt. Ltd., Hyderabad, India',
-        title: 'Operations Analyst Intern',
+        title: 'Sales Operations Analyst Intern',
         techStack: 'Site Supervision, Quantity Takeoff, Documentation',
         summaryPoints: [
           'Developed cost-tracking and vendor analysis reports in Excel, improving budget forecasting accuracy by 10%.',
