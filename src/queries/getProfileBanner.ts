@@ -29,9 +29,9 @@ export async function getProfileBanner(): Promise<ProfileBanner> {
     return {
       backgroundImage: { url: "/logo192.png" },
       headline: "Welcome to Vishwas Reddy's Portfolio",
-      resumeLink: { url: "https://drive.google.com/file/d/1Xsq2yfLyZNQ_WpiA9pgvXPfEm2v3qfxr/view?usp=sharing" },
+      resumeLink: { url: "https://drive.google.com/file/d/1w--FieIikN2QPs0jFBG773c9rT0E1-fZ/view?usp=sharing" },
       linkedinLink: "https://www.linkedin.com/in/sai-vishwas-reddy-badinehal-375611376/",
-      profileSummary: "Operations & Project Manager | Lean Six Sigma Green Belt | Digital, AI & Smart Manufacturing | CAPM® | Process Improvement, Scheduling, Risk Control | MS Project, Power BI, Excel"
+      profileSummary: "Construction Project Manager | Lean Six Sigma Green Belt | Digital, AI & Smart Manufacturing | CAPM® | Process Improvement, Scheduling, Risk Control | MS Project, Power BI, Excel"
     };
   }
 }
