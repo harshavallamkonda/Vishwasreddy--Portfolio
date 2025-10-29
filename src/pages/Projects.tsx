@@ -5,9 +5,24 @@ import NandiViewImg from '../images/Nandi View.jpg';
 import SitrusMeadowsImg from '../images/Sitrus Meadows Entrance.jpg';
 import BescomPhase1Img from '../images/BESCOM City Phase 1.jpg';
 import BescomPhase2Img from '../images/BESCOM Phase 2.jpg';
+import TrexDeckInstallationImg from '../images/Trex Deck Installation.jpeg';
+import TrexDeckInstallationImg2 from '../images/trex Deck_2.jpeg';
+import ResidentialImg from '../images/resdential.jpeg';
+import ResidentialImg2 from '../images/Residential_2.jpeg';
+import ResidentialImg3 from '../images/Residential_3.jpeg';
 
 // Static project data
 const projectsData = [
+  {
+    title: "Trex Deck Installation - Malibu, CA",
+    description: "Associated with SDMJ CONSTRUCTION LLC Proud to complete a $600K luxury residential deck installation for a private villa in Malibu, CA — designed to elevate outdoor living with modern aesthetics, structural precision, and sustainable materials. The project included removal of the existing deck, followed by installation of a 1,500 sq.ft. Trex composite deck with custom railings, steps, and integrated lighting systems. Leveraged Primavera P6, Procore, and MS Project for full-cycle project management — ensuring on-time delivery, QA/QC compliance (ISO 9001:2015), and adherence to Lean Construction and OSHA-10 safety standards. This project exemplifies SDMJ Construction’s commitment to innovation, craftsmanship, and data-driven execution — delivering durability, comfort, and elegance in every detail.",
+    images: [TrexDeckInstallationImg, TrexDeckInstallationImg2]
+  },
+  {
+    title: "Residential Interior Renovation – Los Angeles, CA",
+    description: "Successfully managed and executed a $450K residential interior renovation project in Los Angeles, CA — covering painting, hardwood flooring, and sanitary fixture upgrades. Leveraged Primavera P6 and MS Project for planning and scheduling, while ensuring Lean Construction principles and OSHA-10-aligned safety protocols throughout the project lifecycle. Applied cost estimation and budgeting through Excel (VBA / Power Query) and maintained QA/QC compliance under ISO 9001:2015 standards. Coordinated multi-trade teams, material procurement, and client reporting using Procore, Asana, and SharePoint, achieving zero rework and 100 % on-time delivery. This renovation enhanced both the aesthetic appeal and operational comfort of the home, reinforcing SDMJ Construction’s commitment to quality, safety, and client satisfaction.",
+    images: [ResidentialImg, ResidentialImg2, ResidentialImg3]
+  },
   {
     title: "Sitrus City",
     description: "Sitrus City is a 25-acre premium residential community offering 275 well-planned plots in a fast-growing suburban corridor. The project has been designed with a perfect balance of modern infrastructure and sustainable living, featuring paved roads, underground electrical cabling, reliable water connections, and a landscaped central park. With eco-friendly practices, advanced scheduling, and streamlined vendor coordination, the development achieved a 20% reduction in construction delays while maintaining full compliance with urban development standards. Positioned in a rapidly appreciating location with excellent connectivity to highways, schools, and healthcare, Sitrus City promises not just a home but a secure, future-ready investment in a vibrant community.",
@@ -33,6 +48,7 @@ const projectsData = [
     description: "BESCOM Employees Housing Cooperative Society Phase-2, in association with Sitrus Projects, is a thoughtfully planned small-scale plotted development designed to provide residents with both functionality and quality. The project features clearly demarcated layouts, asphalt internal roads, underground utilities, and palm-lined avenues that enhance both infrastructure and aesthetics. As part of execution, vendor coordination, material management, and on-site supervision were closely overseen to ensure timely readiness of essential services including water supply systems, drainage, and electrical connections. By implementing proactive risk mitigation strategies and strict quality control processes, the project was completed ahead of schedule while upholding high construction and development standards.",
     image: BescomPhase2Img
   }
+
 ];
 
 
@@ -41,6 +57,75 @@ const Projects: React.FC = () => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
   }, []);
+
+  // Carousel state for Trex Deck card
+  const [carouselIndex, setCarouselIndex] = React.useState(0);
+  // Carousel state for cards with images array
+  const [carouselIndices, setCarouselIndices] = React.useState<{ [key: number]: number }>({});
+  // For smooth fade animation
+  const [fade, setFade] = React.useState<{ [key: number]: boolean }>({});
+  // Touch tracking per card
+  const touchStartX = React.useRef<{ [key: number]: number | null }>({});
+
+  // Butter smooth auto-slide effect for all carousel cards
+  React.useEffect(() => {
+    const intervals: NodeJS.Timeout[] = [];
+    projectsData.forEach((project, idx) => {
+      if (project.images && project.images.length > 1) {
+        intervals[idx] = setInterval(() => {
+          // Start fade out
+          setFade((prev) => ({ ...prev, [idx]: false }));
+          // Wait for fade out, then change image and fade in
+          setTimeout(() => {
+            setCarouselIndices((prev) => {
+              const images = project.images || [];
+              const nextIdx = images.length > 0 ? ((prev[idx] || 0) + 1) % images.length : 0;
+              return { ...prev, [idx]: nextIdx };
+            });
+            // Wait for image to change, then fade in
+            setTimeout(() => {
+              setFade((prev) => ({ ...prev, [idx]: true }));
+            }, 10); // minimal delay for fade in
+          }, 400); // fade out duration matches CSS
+        }, 3500); // 3.5s per image for more relaxed pace
+      }
+    });
+    return () => intervals.forEach((interval) => interval && clearInterval(interval));
+  }, [projectsData]);
+
+  // Manual swipe navigation
+  const handleSwipe = (idx: number, direction: 'prev' | 'next') => {
+    setFade((prev) => ({ ...prev, [idx]: false }));
+    setTimeout(() => {
+      setCarouselIndices((prev) => {
+        const images = projectsData[idx].images || [];
+        let nextIdx = prev[idx] || 0;
+        if (images.length > 0) {
+          if (direction === 'prev') {
+            nextIdx = nextIdx === 0 ? images.length - 1 : nextIdx - 1;
+          } else {
+            nextIdx = (nextIdx + 1) % images.length;
+          }
+        }
+        return { ...prev, [idx]: nextIdx };
+      });
+      setFade((prev) => ({ ...prev, [idx]: true }));
+    }, 50);
+  };
+
+  // Touch swipe support per card
+  const handleTouchStart = (idx: number, e: React.TouchEvent) => {
+    touchStartX.current[idx] = e.touches[0].clientX;
+  };
+  const handleTouchEnd = (idx: number, e: React.TouchEvent) => {
+    const startX = touchStartX.current[idx];
+    if (startX !== null && startX !== undefined) {
+      const deltaX = e.changedTouches[0].clientX - startX;
+      if (deltaX > 50) handleSwipe(idx, 'prev'); // swipe right
+      else if (deltaX < -50) handleSwipe(idx, 'next'); // swipe left
+    }
+    touchStartX.current[idx] = null;
+  };
 
   return (
     <div className="projects-container">
@@ -53,7 +138,26 @@ const Projects: React.FC = () => {
             style={{ '--delay': `${index * 0.1}s` } as React.CSSProperties}
           >
             <div className="project-image-container">
-              <img src={project.image} alt={project.title} className="project-image" />
+              {project.images ? (
+                <div
+                  className="carousel-wrapper"
+                  style={{ position: 'relative', width: '100%', height: '100%' }}
+                  onTouchStart={(e) => handleTouchStart(index, e)}
+                  onTouchEnd={(e) => handleTouchEnd(index, e)}
+                >
+                  <img
+                    src={project.images[carouselIndices[index] || 0]}
+                    alt={project.title}
+                    className="project-image"
+                    style={{
+                      transition: 'opacity 0.4s cubic-bezier(.77,0,.18,1)',
+                      opacity: fade[index] === false ? 0 : 1
+                    }}
+                  />
+                </div>
+              ) : (
+                <img src={project.image} alt={project.title} className="project-image" />
+              )}
             </div>
             <div className="project-details">
               <h3 className="project-title">{project.title}</h3>
