@@ -58,8 +58,7 @@ const Projects: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Carousel state for Trex Deck card
-  const [carouselIndex, setCarouselIndex] = React.useState(0);
+  // Removed unused carouselIndex and setCarouselIndex state
   // Carousel state for cards with images array
   const [carouselIndices, setCarouselIndices] = React.useState<{ [key: number]: number }>({});
   // For smooth fade animation
@@ -91,7 +90,8 @@ const Projects: React.FC = () => {
       }
     });
     return () => intervals.forEach((interval) => interval && clearInterval(interval));
-  }, [projectsData]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Manual swipe navigation
   const handleSwipe = (idx: number, direction: 'prev' | 'next') => {
