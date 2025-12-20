@@ -27,14 +27,14 @@ export async function getTimeline(): Promise<TimelineItem[]> {
       {
         timelineType: 'work',
         name: 'SDMJ Construction LLC, South Plainfield, NJ',
-        title: 'Business Operations Analyst',
+        title: 'Assistant Project Manager',
         techStack: 'Commercial & Residential Construction, Scheduling, Cost Control',
         summaryPoints: [
-          'Orchestrated KPI dashboards in Excel/Power BI, improving reporting accuracy by 20% and enabling Lean Six Sigma–driven decision-making.',
-          'Applied Lean Six Sigma to procurement and logistics data, reducing cycle delays by 15% and cutting excess carrying costs',
-          'Coordinated municipal inspections and permitting schedules, expediting approvals and minimizing downtime.',
-          'Achieved cost-control measures and streamlined invoice reconciliation for $150K+ projects, reducing budget variances by 12%',
-          'Optimized compliance workflows with cross-functional teams, achieving 100% OSHA adherence and a 15% reduction in rework.'
+          'Coordinated daily field operations and design reviews, ensuring alignment between architects, vendors, and site teams for smooth project execution',
+          'Streamlined RFIs, submittals, and coordination through Procore, Asana, and SharePoint, reducing delays by 25%.',
+          'Tracked budgets, change orders, and costs via Power BI, Excel, and ERP systems, improving accuracy by 20%.',
+          'Reviewed drawings and QA/QC documentation using AutoCAD, Revit, and BIM 360, maintaining 100% compliance.',
+          'Delivered reports and closeout packages with DocuSign and Adobe Acrobat Pro, enhancing client efficiency by 30%.'
         ],
         dateRange: 'Jan 2025 – Present'
       },
@@ -58,14 +58,14 @@ export async function getTimeline(): Promise<TimelineItem[]> {
       {
         timelineType: 'work',
         name: 'Sitrus Projects India Pvt. Ltd., Hyderabad, India',
-        title: 'Sales Operations Analyst Intern',
+        title: 'Project Coordinator',
         techStack: 'Site Supervision, Quantity Takeoff, Documentation',
         summaryPoints: [
-          'Developed cost-tracking and vendor analysis reports in Excel, improving budget forecasting accuracy by 10%.',
-          'Built operational dashboards to monitor site progress, resources, and KPIs, enabling faster data-driven reviews.',
-          'Applied Lean Six Sigma to streamline approval workflows, reducing municipal clearance delays by 20%',
-          'Performed quantity take-offs, cost variance checks, and ROI analysis on multi-acre projects.',
-          'Standardized reporting templates, improving communication and ensuring 95%+ milestone tracking accuracy'
+          'Orchestrated communication between consultants, site engineers, and vendors, eliminating information gaps and standardizing technical alignment, reducing miscommunication by 90%.',
+          'Administered drawing and document control systems in Procore, managing approval logs, transmittals, and version compliance to ensure teams operated on current, validated construction documents.',
+          'Sustained schedule reliability by maintaining rolling look-ahead plans and dependency trackers, reinforcing execution readiness across active work fronts.',
+          'Consolidated multidisciplinary inputs to identify interface gaps, constructability conflicts, and coordination risks prior to site implementation.',
+          'Prepared structured progress summaries and exception reports for leadership, enabling timely decision-making and preventive issue resolution.'
         ],
         dateRange: 'Jan 2021 – Jun 2021'
       },
