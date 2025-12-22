@@ -42,8 +42,8 @@ export async function getTimeline(): Promise<TimelineItem[]> {
       // Work: Sitrus Projects India – Project Manager
       {
         timelineType: 'work',
-        name: 'Sitrus Projects India Pvt. Ltd., Hyderabad, India',
-        title: 'Project Operations Manager',
+        name: 'Sitrus Projects Bengaluru, India',
+        title: 'Construction Project Manager',
         techStack: 'Residential Construction, Vendor Management, Quality & Safety',
         summaryPoints: [
           'Spearheaded end-to-end execution of residential developments, achieving 95% milestone adherence while ensuring compliance with zoning,permitting, and safety standards',
