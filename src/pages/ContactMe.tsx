@@ -10,7 +10,7 @@ const contactData = {
   summary: "With extensive experience in real estate development, project management, and infrastructure planning across residential communities.",
   companyUniversity: "Sitrus Projects",
   linkedinLink: "https://www.linkedin.com/in/sai-vishwas-reddy-badinehal-375611376?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BU1gQ8WlgSM2il3Z53GSkcA%3D%3D",
-  email: "saivishwasreddybadinehal@gmail.com",
+  email: "saivishwasreddybadinehal16@gmail.com",
   phoneNumber: "+1 (747) 206-6193"
 };
 
