@@ -5,9 +5,16 @@ import NandiViewImg from '../images/Nandi View.jpg';
 import SitrusMeadowsImg from '../images/Sitrus Meadows Entrance.jpg';
 import BescomPhase1Img from '../images/BESCOM City Phase 1.jpg';
 import BescomPhase2Img from '../images/BESCOM Phase 2.jpg';
+import ComptonHighSchool1Img from '../images/compton-high-school-1.svg';
+import ComptonHighSchool2Img from '../images/compton-high-school-2.svg';
 
 // Static project data
 const projectsData = [
+  {
+    title: "Compton High School Reconstruction Project",
+    description: "Worked on the $232M Compton High School Reconstruction project with Swinerton, a large-scale 31-acre K–12 campus development delivering a state-of-the-art educational facility in Compton. Contributed during the commissioning and closeout phase, supporting RFIs, submittals, and document control using Procore while coordinating closely with subcontractors to ensure timely completion of punch list items and handover documentation. Assisted in schedule tracking and progress monitoring using Primavera P6 and MS Project, helping maintain alignment with project timelines during final delivery. Gained hands-on exposure to US construction standards, QA/QC processes, and large-scale project closeout workflows, while collaborating with cross-functional teams to successfully transition the project into operational readiness.",
+    images: [ComptonHighSchool1Img, ComptonHighSchool2Img]
+  },
   {
     title: "Sitrus City",
     description: "Sitrus City is a 25-acre premium residential community offering 275 well-planned plots in a fast-growing suburban corridor. The project has been designed with a perfect balance of modern infrastructure and sustainable living, featuring paved roads, underground electrical cabling, reliable water connections, and a landscaped central park. With eco-friendly practices, advanced scheduling, and streamlined vendor coordination, the development achieved a 20% reduction in construction delays while maintaining full compliance with urban development standards. Positioned in a rapidly appreciating location with excellent connectivity to highways, schools, and healthcare, Sitrus City promises not just a home but a secure, future-ready investment in a vibrant community.",
