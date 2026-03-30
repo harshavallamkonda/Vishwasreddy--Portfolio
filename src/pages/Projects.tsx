@@ -5,24 +5,9 @@ import NandiViewImg from '../images/Nandi View.jpg';
 import SitrusMeadowsImg from '../images/Sitrus Meadows Entrance.jpg';
 import BescomPhase1Img from '../images/BESCOM City Phase 1.jpg';
 import BescomPhase2Img from '../images/BESCOM Phase 2.jpg';
-import TrexDeckInstallationImg from '../images/Trex Deck Installation.jpeg';
-import TrexDeckInstallationImg2 from '../images/trex Deck_2.jpeg';
-import ResidentialImg from '../images/resdential.jpeg';
-import ResidentialImg2 from '../images/Residential_2.jpeg';
-import ResidentialImg3 from '../images/Residential_3.jpeg';
 
 // Static project data
 const projectsData = [
-  {
-    title: "Trex Deck Installation - Malibu, CA",
-    description: "Associated with SDMJ CONSTRUCTION LLC Proud to complete a $600K luxury residential deck installation for a private villa in Malibu, CA — designed to elevate outdoor living with modern aesthetics, structural precision, and sustainable materials. The project included removal of the existing deck, followed by installation of a 1,500 sq.ft. Trex composite deck with custom railings, steps, and integrated lighting systems. Leveraged Primavera P6, Procore, and MS Project for full-cycle project management — ensuring on-time delivery, QA/QC compliance (ISO 9001:2015), and adherence to Lean Construction and OSHA-10 safety standards. This project exemplifies SDMJ Construction’s commitment to innovation, craftsmanship, and data-driven execution — delivering durability, comfort, and elegance in every detail.",
-    images: [TrexDeckInstallationImg, TrexDeckInstallationImg2]
-  },
-  {
-    title: "Residential Interior Renovation – Los Angeles, CA",
-    description: "Successfully managed and executed a $450K residential interior renovation project in Los Angeles, CA — covering painting, hardwood flooring, and sanitary fixture upgrades. Leveraged Primavera P6 and MS Project for planning and scheduling, while ensuring Lean Construction principles and OSHA-10-aligned safety protocols throughout the project lifecycle. Applied cost estimation and budgeting through Excel (VBA / Power Query) and maintained QA/QC compliance under ISO 9001:2015 standards. Coordinated multi-trade teams, material procurement, and client reporting using Procore, Asana, and SharePoint, achieving zero rework and 100 % on-time delivery. This renovation enhanced both the aesthetic appeal and operational comfort of the home, reinforcing SDMJ Construction’s commitment to quality, safety, and client satisfaction.",
-    images: [ResidentialImg, ResidentialImg2, ResidentialImg3]
-  },
   {
     title: "Sitrus City",
     description: "Sitrus City is a 25-acre premium residential community offering 275 well-planned plots in a fast-growing suburban corridor. The project has been designed with a perfect balance of modern infrastructure and sustainable living, featuring paved roads, underground electrical cabling, reliable water connections, and a landscaped central park. With eco-friendly practices, advanced scheduling, and streamlined vendor coordination, the development achieved a 20% reduction in construction delays while maintaining full compliance with urban development standards. Positioned in a rapidly appreciating location with excellent connectivity to highways, schools, and healthcare, Sitrus City promises not just a home but a secure, future-ready investment in a vibrant community.",
