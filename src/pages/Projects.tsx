@@ -5,8 +5,8 @@ import NandiViewImg from '../images/Nandi View.jpg';
 import SitrusMeadowsImg from '../images/Sitrus Meadows Entrance.jpg';
 import BescomPhase1Img from '../images/BESCOM City Phase 1.jpg';
 import BescomPhase2Img from '../images/BESCOM Phase 2.jpg';
-import ComptonHighSchool1Img from '../images/compton-high-school-1.svg';
-import ComptonHighSchool2Img from '../images/compton-high-school-2.svg';
+import ComptonHighSchool1Img from '../images/compton-high-school-1.jpg';
+import ComptonHighSchool2Img from '../images/compton-high-school-2.jpg';
 
 // Static project data
 const projectsData = [
